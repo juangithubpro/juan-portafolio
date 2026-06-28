@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">CapsulaWebs</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Projectos</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+      </div>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="btn btn-color-2" title="Toggle light/dark mode" style="margin-left:1rem;">🌙</button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">CapsulaWebs<br /></div>
+      <br><br />
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contactos</a></li>
+        </div>
+      </div>
+      <!-- Theme Toggle Button for Hamburger Nav -->
+      <button id="theme-toggle-mobile" class="btn btn-color-2" title="Toggle light/dark mode" style="margin:10px auto;display:block;">🌙</button>
+    </nav>
+
+    <!-- Profile Section Start-->
+    <section id="profile">
+      <div class="section__pic-container" style="border-radius: 50%; overflow: hidden; width: 500px; height: 500px;">
+        <img src="./assets/perfil1.jpg" alt="Chirag profile picture"
+          style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">¡Hola! soy</p>
+        <h1 class="title">Juan Pucheta</h1>
+        <p class="section__text__p2">Programador web y CEO de CapsulaWebs</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CVjuan.pdf')">
+            Descargar CV 
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contactos
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://wa.me/543644325291" target="_blank">
+            <img src="./assets/wapp.png" alt="My LinkedIn profile" class="icon" />
+          </a>
+          <a href="https://www.instagram.com/juaniipucheta/" target="_blank">
+            <img src="./assets/instagram1.png" alt="My Github profile" class="icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+<img src="./assets/ArrowDn.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+
+    <!-- About Section Start-->
+    <section id="about">
+      <p class="section__text__p1">Conoce más</p>
+      <h1 class="title">SOBRE MI</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/perfil2.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experiencia</h3>
+              <p>4 Años<br />Desarrollador Web</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Educación</h3>
+              <p>. Informatorio Chaco<br />. free code camp<br />. IES Juan Mantovani
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+               Soy un apasionado del desarrollo de software que ve el código como una herramienta para simplificar el mundo real. Mi enfoque está en construir productos web que sean rápidos, intuitivos y que aporten soluciones inmediatas a flujos de trabajo lentos o repetitivos.
+Mi último proyecto, Capsula Webs, es mi marca con la cual ya cuento con 5 medios de comunicación que confiaron en mi para crearle su página web.     
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<img src="./assets/ArrowDn.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+
+    <!-- Experience Section Start-->
+    <section id="experience">
+      <p class="section__text__p1">Explora mis habilidades</p>
+      <h1 class="title">Tecnologías que manejo</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desarrollo</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React.Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node.Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express.Js</h3>
+                  <p>Principiante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Mongo Db</h3>
+                  <p>Principiante</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQl</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Otras tecnologías</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Core Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>DSA</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Springboot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Agile/Scrum </h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<img src="./assets/ArrowDn.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+
+    <!-- Project Section Start-->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">PROJECTS</h1>
+
+
+      <div class="projects-container">
+
+        <!-- First Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/sp.png" 
+            alt="Project 1" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">SP Noticias</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://spnoticias.com.ar/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Second Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/sp2.png" 
+            alt="Project 2" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">sp deportivo</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://spdeportivo.com.ar/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Third Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/nada.png" 
+            alt="Project 3" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Nada Digital</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://nadadigital.com.ar/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Fourth Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/radioactiva.png" 
+            alt="Project 4" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Radio Activa Pampa del Infierno</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://radioactivapampadelinfierno.com.ar/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Fifth Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/termal.png" 
+            alt="Project 5" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Diario Termal</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://diariotermal.com.ar/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Sixth Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/marcasp (1).png" 
+            alt="Project 6" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Marca de Agua</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://juangithubpro.github.io/marcadeagua2/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Seventh Project-->
+        <div class="project-card color-container">
+          <div class="article-container">
+            <img src="./assets/extractor.png" 
+            alt="Project 7" 
+            class="project-img" 
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Extractor de Noticias</h2>
+          <div class="btn-container">
+    
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+     
+
+            
+       
+
+           
+    </section>
+
+<img src="./assets/ArrowUp.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
+
+    <!-- Contact Section Start-->
+    <section id="contact">
+      <p class="section__text__p1">Información de</p>
+      <h1 class="title">CONTACTO</h1>
+      <div class="contact-info-upper-container">
+
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="puchetaj55@gmail.com">puchetaj55@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/instagram1.png" alt="" class="icon contact-icon" />
+          <p>
+            <a href="https://www.instagram.com/juaniipucheta/" target="_blank"
+              rel="noopener noreferrer">@juaniipucheta</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Section Start-->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Projectos</a></li>
+            <li><a href="#contact">Contactos</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 @CapsulaWebs Todos los derechos reservados.</p>
+      <!-- <p>View me in Light/Dark Mode, toggle the theme button from nav bar.</p>  -->
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- Project Details Modal -->
+  <div id="project-modal" class="modal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;overflow:auto;background-color:rgba(0,0,0,0.6);align-items:center;justify-content:center;">
+    <div class="modal-content" style="background:#686565;margin:5% auto;padding:2rem;border-radius:1.5rem;width:90%;max-width:600px;position:relative;box-shadow:0 4px 32px rgba(0,0,0,0.2);">
+      <span class="close-modal" style="position:absolute;top:1rem;right:1.5rem;font-size:2rem;color:#212020;cursor:pointer;">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  </body>
+
+</html>
